@@ -2,7 +2,7 @@ import React from 'react'
 
 function Navbar() {
   return (
-    <div className='mx-5'>
+    <div className='px-5 py-5 bg-gray-100'>
       <div className='flex justify-between'>
         <div className='flex gap-6'>
             <h1>light</h1>
