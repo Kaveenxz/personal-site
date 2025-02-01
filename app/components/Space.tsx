@@ -1,12 +1,12 @@
 import React from 'react'
 
-function Space(color:any) {
+function Space(props:any) {
 
-  console.log(color.color)
-  const bg:any = color.color
+  console.log(props.color)
+  const bg:any = props.color
   return (
     <div className='w-full'>
-      <div className={`w-screen pb-10 rounded-bl-full rounded-br-full ${bg}`}>
+      <div className={`w-screen pb-10 ${props.direction} ${props.color}`}>
       </div>
     </div>
   )

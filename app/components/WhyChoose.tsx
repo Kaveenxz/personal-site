@@ -20,10 +20,10 @@ export default function WhyChoose() {
       initial={{ opacity: 0, y: 30 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.8, ease: "easeOut" }}
-      className="my-10"
+      className="my-20"
     >
       {/* Gradient Title with Shine Effect */}
-      <div className="flex flex-col justify-center items-center text-center mb-12 gap-2">
+      <div className="flex flex-col justify-center items-center text-center gap-2 mb-20">
         <h1 className="text-2xl font-bold bg-gradient-to-r from-black via-gray-500 to-black text-transparent bg-clip-text animate-gradient">
           We don’t just build websites – we create high-performing digital experiences that attract, engage, and convert.
         </h1>
@@ -36,7 +36,7 @@ export default function WhyChoose() {
       </div>
 
       {/* Feature Icons with Hover Effects */}
-      <div className="flex justify-between gap-5 relative">
+      <div className="flex justify-between gap-5 relative mb-10">
         {features.map((feature, index) => {
           const Icon = feature.icon;
           return (
@@ -55,7 +55,7 @@ export default function WhyChoose() {
       </div>
 
       {/* Dynamic Tooltip Text */}
-      {hoveredText && (
+      {/* {hoveredText && (
         <motion.div
           initial={{ opacity: 0, y: -10 }}
           animate={{ opacity: 1, y: 0 }}
@@ -64,7 +64,7 @@ export default function WhyChoose() {
         >
           {hoveredText}
         </motion.div>
-      )}
+      )} */}
 
       {/* Gradient Animation CSS */}
       <style jsx>{`
