@@ -15,7 +15,12 @@ function HomePage() {
     }, []);
   
     return (
-      <div className="flex  flex-col items-center w-full bg-gray-100 pb-10">
+      <div className="flex  flex-col items-center w-full bg-gray-100 pb-10"
+      style={{
+        backgroundImage: "radial-gradient(circle, rgba(0,0,0,0.1) 1px, transparent 1px)",
+        backgroundSize: "10px 10px"
+      }}>
+
         {/* Logo with Fade-In Animation */}
         <motion.div
           initial={{ opacity: 0, scale: 0.8 }}

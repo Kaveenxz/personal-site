@@ -54,17 +54,6 @@ export default function WhyChoose() {
         })}
       </div>
 
-      {/* Dynamic Tooltip Text */}
-      {/* {hoveredText && (
-        <motion.div
-          initial={{ opacity: 0, y: -10 }}
-          animate={{ opacity: 1, y: 0 }}
-          exit={{ opacity: 0, y: -10 }}
-          className="mt-6 text-center text-gray-700 text-lg font-semibold"
-        >
-          {hoveredText}
-        </motion.div>
-      )} */}
 
       {/* Gradient Animation CSS */}
       <style jsx>{`

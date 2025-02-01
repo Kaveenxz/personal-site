@@ -2,7 +2,11 @@ import React from 'react'
 
 function Navbar() {
   return (
-    <div className='px-5 py-5 bg-gray-100'>
+    <div className='px-5 py-5 bg-gray-100'
+    style={{
+      backgroundImage: "radial-gradient(circle, rgba(0,0,0,0.1) 1px, transparent 1px)",
+      backgroundSize: "10px 10px"
+    }}>
       <div className='flex justify-between'>
         <div className='flex gap-6'>
             <h1>light</h1>

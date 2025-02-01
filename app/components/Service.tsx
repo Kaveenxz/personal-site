@@ -1,9 +1,14 @@
 import { AudioWaveformIcon, Bot, Cable, Figma, LayoutPanelTop, PhoneCall } from 'lucide-react'
 import React from 'react'
+import Space from './Space'
 
 function Service() {
     return (
-        <div className='bg-gray-100 w-full'>
+        <div className='bg-gray-100 w-full'
+        style={{
+            backgroundImage: "radial-gradient(circle, rgba(0,0,0,0.1) 1px, transparent 1px)",
+            backgroundSize: "10px 10px"
+          }}>
             <div className='text-5xl font-bold flex flex-col text-center mt-10 my-20'>
                 <h1 className=' font-bold bg-gradient-to-r from-black to-gray-400 text-transparent bg-clip-text drop-shadow-lg'>Custom Solutions</h1>
                 <h1 className=' font-bold bg-gradient-to-r from-black to-gray-400 text-transparent bg-clip-text drop-shadow-lg'>Tailored to Your Business</h1>
@@ -64,12 +69,15 @@ function Service() {
             </div>
 
 
-            <div className="my-10 flex justify-center gap-5 text-lg">
+            <div className="mt-10 my-20 flex justify-center gap-5 text-lg">
           {/* Book a Call Button */}
          
             <button className="bg-gray-800 px-10 py-4 rounded-full flex gap-2 text-white cursor-pointer transition-all duration-300 hover:bg-white hover:border-2 hover:border-gray-800 hover:text-gray-800 hover:font-semibold shadow-md"
             >View Full Services</button>
           </div>
+
+          <Space color="bg-white" direction="rounded-tl-full rounded-tr-full"/>
+
         </div>
 
     )
