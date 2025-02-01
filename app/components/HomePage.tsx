@@ -55,7 +55,7 @@ function HomePage() {
         </div>
   
         {/* Call-to-Action Buttons with Hover Effects */}
-        <div className="mt-10 flex justify-center gap-5 text-lg">
+        <div className="mt-14 flex justify-center gap-5 text-lg">
           {/* Book a Call Button */}
           <motion.div
             whileHover={{ scale: 1.1 }}
