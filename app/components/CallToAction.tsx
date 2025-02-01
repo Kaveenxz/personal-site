@@ -44,7 +44,7 @@ function CallToAction() {
                 </div>
             </div>
 
-            <div className='my-20 w-full'>
+            <div className='mt-20 mb-5 w-full'>
                 <hr className='mx-20  border border-gray-300' />
             </div>
 
