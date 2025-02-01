@@ -19,6 +19,7 @@ function Footer() {
           <Link href="/" className="hover:text-gray-900 transition">Home</Link>
           <Link href="/services" className="hover:text-gray-900 transition">Services</Link>
           <Link href="/portfolio" className="hover:text-gray-900 transition">Portfolio</Link>
+          <Link href="/portfolio" className="hover:text-gray-900 transition">About</Link>
           <Link href="/contact" className="hover:text-gray-900 transition">Contact</Link>
         </div>
 
@@ -45,8 +46,9 @@ function Footer() {
 
       {/* Bottom Copyright */}
       <div className="mt-6 text-center text-gray-400 text-sm">
-        © 2024 Xpertrix. All rights reserved.
+        © 2025 Netizen. All rights reserved.
       </div>
+      
     </footer>
   );
 }
