@@ -25,21 +25,21 @@ function Footer() {
 
         {/* Right Section - Social Media & Contact */}
         <div className="flex justify-end space-x-4 text-gray-600">
-          <a href="https://youtube.com" target="_blank" className="hover:text-gray-900 transition">
+          <Link href="https://youtube.com" target="_blank" className="hover:text-gray-900 transition">
             <Youtube className="w-5 h-5" />
-          </a>
-          <a href="https://twitter.com" target="_blank" className="hover:text-gray-900 transition">
+          </Link>
+          <Link href="https://twitter.com" target="_blank" className="hover:text-gray-900 transition">
             <Twitter className="w-5 h-5" />
-          </a>
-          <a href="https://linkedin.com" target="_blank" className="hover:text-gray-900 transition">
+          </Link>
+          <Link href="https://linkedin.com" target="_blank" className="hover:text-gray-900 transition">
             <Linkedin className="w-5 h-5" />
-          </a>
-          <a href="mailto:info@xpertrix.com" className="hover:text-gray-900 transition">
+          </Link>
+          <Link href="mailto:info@xpertrix.com" className="hover:text-gray-900 transition">
             <Mail className="w-5 h-5" />
-          </a>
-          <a href="https://wa.me/yourwhatsappnumber" className="hover:text-gray-900 transition">
+          </Link>
+          <Link href="https://wa.me/yourwhatsappnumber" className="hover:text-gray-900 transition">
             <MessageCircle className="w-5 h-5" />
-          </a>
+          </Link>
         </div>
 
       </div>
