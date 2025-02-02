@@ -15,7 +15,7 @@ function HomePage() {
     }, []);
   
     return (
-      <div className="flex  flex-col items-center w-full bg-gray-100 pb-10"
+      <div className="flex flex-col items-center w-full bg-gray-100 dark:bg-gray-900 pb-10"
       style={{
         backgroundImage: "radial-gradient(circle, rgba(0,0,0,0.1) 1px, transparent 1px)",
         backgroundSize: "10px 10px"
@@ -28,7 +28,7 @@ function HomePage() {
           transition={{ duration: 0.8, ease: "easeOut" }}
           className="mt-20"
         >
-          <Image src={logo} alt="logo" className="w-48 rounded-full shadow-lg" />
+          <Image src={logo} alt="logo" className="w-48 rounded-full shadow-lg border-2 border-black dark:border-white p-1" />
         </motion.div>
   
         {/* Animated Gradient Text */}
@@ -37,7 +37,7 @@ function HomePage() {
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.3 }}
-            className="bg-gradient-to-r from-black to-gray-500 bg-clip-text animate-gradient"
+            className="bg-gradient-to-r from-black dark:from-white to-gray-500 dark:to-gray-400 bg-clip-text animate-gradient"
           >
             High-Performing Websites
           </motion.div>
@@ -45,7 +45,7 @@ function HomePage() {
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.5 }}
-            className="bg-gradient-to-r from-black to-gray-500  bg-clip-text animate-gradient"
+            className="bg-gradient-to-r from-black dark:from-white to-gray-500 dark:to-gray-400 bg-clip-text animate-gradient"
           >
             That Convert
           </motion.div>
@@ -53,7 +53,7 @@ function HomePage() {
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.7 }}
-            className="bg-gradient-to-r from-black to-gray-500 bg-clip-text animate-gradient"
+            className="bg-gradient-to-r from-black dark:from-white to-gray-500 dark:to-gray-400 bg-clip-text animate-gradient"
           >
             Visitors Into Customers
           </motion.div>
@@ -65,7 +65,7 @@ function HomePage() {
           <motion.div
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.9 }}
-            className="bg-gray-800 px-10 py-4 rounded-full flex gap-2 text-white cursor-pointer transition-all duration-300 hover:bg-white hover:border-2 hover:border-gray-800 hover:text-gray-800 hover:font-semibold shadow-md"
+            className="bg-gray-800 dark:bg-white px-10 py-4 rounded-full flex gap-2 text-white dark:text-gray-800 cursor-pointer transition-all duration-300 hover:bg-white hover:border-2 hover:border-gray-800 hover:text-gray-800 dark:hover:bg-gray-800 dark:hover:text-white hover:font-semibold shadow-md"
           >
             <button>Book a Call</button> <PhoneCall />
           </motion.div>
@@ -74,7 +74,7 @@ function HomePage() {
           <motion.div
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.9 }}
-            className="border-2 border-gray-800 px-6 py-4 rounded-full flex gap-2 text-gray-800 font-semibold cursor-pointer transition-all duration-300 hover:bg-gray-800 hover:text-white shadow-md"
+            className="border-2 border-gray-800 dark:border-white px-6 py-4 rounded-full flex gap-2 text-gray-800 dark:text-white font-semibold cursor-pointer transition-all duration-300 hover:bg-gray-800 dark:hover:bg-white hover:text-white dark:hover:text-gray-800 shadow-md"
           >
             <button>View Our Work</button> <Workflow />
           </motion.div>
@@ -98,4 +98,4 @@ function HomePage() {
     );
   }
   
-export default HomePage
+export default HomePage;

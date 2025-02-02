@@ -9,7 +9,7 @@ export default function Home() {
 
 
   return (
-    <div className="flex  flex-col items-center w-full">
+    <div className="flex  flex-col items-center w-full dark:bg-gray-900">
  
         <HomePage/>
         <Space color="bg-gray-100" direction="rounded-bl-full rounded-br-full" backgroundImage="radial-gradient(circle, rgba(0,0,0,0.1) 1px, transparent 1px)" bgSize="10px 10px"/>

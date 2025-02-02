@@ -48,3 +48,12 @@ body {
   overflow-y: scroll; /* or auto */
   scrollbar-width: none; /* Firefox hides the scrollbar */
 }
+
+.bg-pattern {
+  background-image: radial-gradient(circle, rgba(0, 0, 0, 0.1) 1px, transparent 1px);
+  background-size: 10px 10px;
+}
+
+.dark .bg-pattern {
+  background-image: radial-gradient(circle, rgba(255, 255, 255, 0.2) 1px, transparent 1px);
+}

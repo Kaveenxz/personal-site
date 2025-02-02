@@ -42,7 +42,7 @@ const services = [
 function Service() {
   return (
     <div
-      className="bg-gray-100 w-full"
+      className="bg-gray-100 w-full dark:bg-gray-900"
       style={{
         backgroundImage: "radial-gradient(circle, rgba(0,0,0,0.1) 1px, transparent 1px)",
         backgroundSize: "10px 10px",
@@ -56,10 +56,10 @@ function Service() {
         viewport={{ once: true }}
         className="text-5xl font-bold flex flex-col text-center mt-10 my-20"
       >
-        <h1 className="font-bold bg-gradient-to-r from-black to-gray-400 text-transparent bg-clip-text drop-shadow-lg">
+        <h1 className="font-bold bg-gradient-to-r dark:from-white from-black to-gray-400 dark:to-gray-300 text-transparent bg-clip-text drop-shadow-lg">
           Custom Solutions
         </h1>
-        <h1 className="font-bold bg-gradient-to-r from-black to-gray-400 text-transparent bg-clip-text drop-shadow-lg">
+        <h1 className="font-bold bg-gradient-to-r dark:from-white from-black to-gray-400 dark:to-gray-300 text-transparent bg-clip-text drop-shadow-lg">
           Tailored to Your Business
         </h1>
       </motion.div>
@@ -94,7 +94,7 @@ function Service() {
             transition: { staggerChildren: 0.2 },
           },
         }}
-        className="flex justify-between gap-2 mx-10 mb-20 items-center"
+        className="flex justify-between gap-2 mx-10 mb-20 items-center dark:text-white"
       >
         {services.map((service, index) => (
           <motion.div
@@ -109,7 +109,7 @@ function Service() {
             <div className="mt-6">
               <h1 className="text-xl font-semibold transition-transform duration-300 group-hover:scale-110">{service.title}</h1>
             </div>
-            <p className="mt-5 text-gray-600 transition-transform duration-300 group-hover:scale-110">{service.description}</p>
+            <p className="mt-5 text-gray-600 dark:text-gray-300 transition-transform duration-300 group-hover:scale-110">{service.description}</p>
           </motion.div>
         ))}
       </motion.div>
@@ -125,7 +125,7 @@ function Service() {
         <motion.button
           whileHover={{ scale: 1.05 }}
           whileTap={{ scale: 0.95 }}
-          className="bg-gray-800 px-10 py-4 rounded-full flex gap-2 text-white cursor-pointer transition-all duration-300 hover:bg-white hover:border-2 hover:border-gray-800 hover:text-gray-800 hover:font-semibold shadow-md"
+          className="bg-gray-800 dark:bg-white dark:text-gray-800 px-10 py-4 rounded-full flex gap-2 text-white cursor-pointer transition-all duration-300 dark:hover:bg-gray-800  hover:bg-white hover:border-2 hover:border-gray-800 dark:hover:border-white hover:text-gray-800 dark:hover:text-white hover:font-semibold shadow-md"
         >
           View Full Services
         </motion.button>
