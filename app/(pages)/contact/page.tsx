@@ -27,7 +27,7 @@ export default function ContactPage() {
                 initial={{ opacity: 0, y: -50 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 1 }}
-                className="relative w-full flex flex-col items-center justify-center text-center px-6 text-gray-700"
+                className="relative pt-20 w-full flex flex-col items-center justify-center text-center px-6 text-gray-700"
             >
                 <h1 className="text-6xl font-bold bg-gradient-to-r from-black to-gray-400 text-transparent bg-clip-text drop-shadow-lg">
                     Get In Touch
