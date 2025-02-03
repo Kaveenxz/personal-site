@@ -19,7 +19,7 @@ export default function ContactPage() {
     };
 
     return (
-        <div className="min-h-screen bg-gray-100 text-gray-900 relative dark:bg-gray-900 dark:text-white" 
+        <div className="min-h-screen pt-14 bg-gray-100 text-gray-900 relative dark:bg-gray-900 dark:text-white" 
             style={{ backgroundImage: "radial-gradient(circle, rgba(0,0,0,0.1) 1px, transparent 1px)", backgroundSize: "10px 10px" }}>
 
             {/* Hero Section */}

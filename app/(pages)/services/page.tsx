@@ -7,7 +7,7 @@ import Footer from '@/app/components/Footer';
 
 function ServicesPage() {
   return (
-    <div className="w-full bg-gray-100 dark:bg-gray-900"
+    <div className="w-full pt-14 bg-gray-100 dark:bg-gray-900"
     style={{
       backgroundImage: "radial-gradient(circle, rgba(0,0,0,0.1) 1px, transparent 1px)",
       backgroundSize: "10px 10px"

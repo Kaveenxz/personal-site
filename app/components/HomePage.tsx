@@ -15,7 +15,7 @@ function HomePage() {
     }, []);
   
     return (
-      <div className="flex flex-col items-center w-full bg-gray-100 dark:bg-gray-900 pb-10"
+      <div className="flex pt-14 flex-col items-center w-full bg-gray-100 dark:bg-gray-900 pb-10"
       style={{
         backgroundImage: "radial-gradient(circle, rgba(0,0,0,0.1) 1px, transparent 1px)",
         backgroundSize: "10px 10px"
