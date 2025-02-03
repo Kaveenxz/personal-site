@@ -23,7 +23,7 @@ export default function Navbar() {
         <div className="fixed top-4 left-1/2 transform -translate-x-1/2 w-[90%] max-w-4xl 
         bg-white/30 dark:bg-black/30 backdrop-blur-lg shadow-xl rounded-full px-6 py-4 z-50 
         border border-white/10 dark:border-gray-800 transition-all hover:scale-105">
-            
+
             <div className="absolute inset-0 -z-10 blur-3xl opacity-30">
                 <div className="bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 w-full h-full rounded-full"></div>
             </div>
@@ -41,13 +41,17 @@ export default function Navbar() {
                 <ul className="flex gap-6 text-gray-800 dark:text-gray-300 font-medium text-lg">
                     {["Home", "Services", "Portfolio", "About", "Contact"].map((item, index) => (
                         <li key={index} className="relative group">
-                            <Link href={`/${item.toLowerCase()}`} className="cursor-pointer hover:text-gray-500 dark:hover:text-gray-400">
+                            <Link
+                                href={item === "Home" ? "/" : `/${item.toLowerCase()}`}
+                                className="cursor-pointer hover:text-gray-500 dark:hover:text-gray-400"
+                            >
                                 {item}
                                 <span className="absolute left-0 bottom-0 w-0 h-1 bg-gradient-to-r from-blue-500 to-pink-500 transition-all group-hover:w-full"></span>
                             </Link>
                         </li>
                     ))}
                 </ul>
+
             </div>
         </div>
     );
