@@ -19,7 +19,7 @@ export default function ContactPage() {
     };
 
     return (
-        <div className="min-h-screen bg-gray-100 text-gray-900 relative"
+        <div className="min-h-screen bg-gray-100 text-gray-900 relative dark:bg-gray-900 dark:text-white" 
             style={{ backgroundImage: "radial-gradient(circle, rgba(0,0,0,0.1) 1px, transparent 1px)", backgroundSize: "10px 10px" }}>
 
             {/* Hero Section */}
@@ -29,10 +29,10 @@ export default function ContactPage() {
                 transition={{ duration: 1 }}
                 className="relative pt-20 w-full flex flex-col items-center justify-center text-center px-6 text-gray-700"
             >
-                <h1 className="text-6xl font-bold bg-gradient-to-r from-black to-gray-400 text-transparent bg-clip-text drop-shadow-lg">
-                    Get In Touch
+                <h1 className="text-6xl font-bold bg-gradient-to-r from-black dark:from-white to-gray-400 dark:to-gray-400 text-transparent bg-clip-text drop-shadow-lg">
+                Get In Touch
                 </h1>
-                <p className="mt-4 text-xl opacity-80 max-w-2xl">
+                <p className="mt-4 text-xl opacity-80 max-w-2xl dark:text-gray-200">
                     We’d love to hear from you! Fill out the form below and we’ll get back to you as soon as possible.
                 </p>
             </motion.div>
@@ -47,22 +47,22 @@ export default function ContactPage() {
                         whileInView={{ opacity: 1, x: 0 }}
                         transition={{ duration: 0.8 }}
                         viewport={{ once: true }}
-                        className="space-y-6 bg-white p-8 rounded-xl shadow-lg"
+                        className="space-y-6 bg-white dark:bg-gray-800 p-8 rounded-xl shadow-lg"
                     >
                         <h2 className="text-3xl font-semibold">Contact Information</h2>
-                        <p className="text-gray-600">Have questions? Reach out to us via email, phone, or social media.</p>
+                        <p className="text-gray-600 dark:text-gray-200">Have questions? Reach out to us via email, phone, or social media.</p>
 
-                        <div className="space-y-4">
+                        <div className="space-y-4 ">
                             <div className="flex items-center space-x-4">
-                                <Mail className="text-gray-700" />
+                                <Mail className="text-gray-700 dark:text-gray-100" />
                                 <span className="text-lg font-medium">contact@netizen.com</span>
                             </div>
                             <div className="flex items-center space-x-4">
-                                <Phone className="text-gray-700" />
+                                <Phone className="text-gray-700 dark:text-gray-100" />
                                 <span className="text-lg font-medium">+94 76 123 4567</span>
                             </div>
                             <div className="flex items-center space-x-4">
-                                <MapPin className="text-gray-700" />
+                                <MapPin className="text-gray-700 dark:text-gray-100" />
                                 <span className="text-lg font-medium">Colombo, Sri Lanka</span>
                             </div>
                         </div>
@@ -71,21 +71,21 @@ export default function ContactPage() {
                         <div className="mt-6">
                             <h3 className="text-xl font-semibold mb-2">Follow Us</h3>
                             <div className="flex space-x-6">
-                                <a href="#" className="flex items-center space-x-2 text-gray-600 hover:text-blue-600">
+                                <a href="#" className="flex items-center space-x-2 text-gray-600 dark:text-gray-200 hover:text-blue-600 dark:hover:text-blue-500">
                                     <Facebook size={24} />
                                     <span>Facebook</span>
                                 </a>
-                                <a href="#" className="flex items-center space-x-2 text-gray-600 hover:text-blue-400">
+                                <a href="#" className="flex items-center space-x-2 text-gray-600 dark:text-gray-200 hover:text-blue-400 dark:hover:text-blue-300">
                                     <Twitter size={24} />
                                     <span>Twitter</span>
                                 </a>
                             </div>
                             <div className="flex space-x-6 mt-2">
-                                <a href="#" className="flex items-center space-x-2 text-gray-600 hover:text-pink-600">
+                                <a href="#" className="flex items-center space-x-2 text-gray-600 dark:text-gray-200 hover:text-pink-600 dark:hover:text-pink-500">
                                     <Instagram size={24} />
                                     <span>Instagram</span>
                                 </a>
-                                <a href="#" className="flex items-center space-x-2 text-gray-600 hover:text-blue-800">
+                                <a href="#" className="flex items-center space-x-2 text-gray-600 dark:text-gray-200 hover:text-blue-800 dark:hover:text-blue-700">
                                     <Linkedin size={24} />
                                     <span>LinkedIn</span>
                                 </a>
@@ -96,7 +96,8 @@ export default function ContactPage() {
                             href="https://wa.me/94761234567?text=Hello!%20I%20have%20a%20question"
                             whileHover={{ scale: 1.05 }}
                             whileTap={{ scale: 0.95 }}
-                            className="block text-center w-full bg-gray-800 text-white p-4 rounded-lg shadow-md hover:bg-white hover:border-2 hover:border-gray-800 hover:text-gray-800 hover:font-semibold"
+                            className="block text-center w-full bg-gray-800 dark:bg-gray-100 py-4 rounded-full text-white dark:text-gray-900 cursor-pointer transition-all duration-300 hover:bg-white dark:hover:bg-gray-800 hover:border-2 hover:border-gray-800 dark:hover:text-white dark:hover:border-white hover:text-gray-800 hover:font-semibold dark:font-semibold shadow-md"
+
                         >
                             Message on WhatsApp
                         </motion.a>
@@ -108,36 +109,45 @@ export default function ContactPage() {
                         whileInView={{ opacity: 1, x: 0 }}
                         transition={{ duration: 0.8 }}
                         viewport={{ once: true }}
-                        className="bg-white p-8 rounded-xl shadow-lg"
+                        className="bg-white dark:bg-gray-800 p-8 rounded-xl shadow-lg"
                     >
                         <h2 className="text-3xl font-semibold text-center">Send Us a Message</h2>
-                        <form onSubmit={handleSubmit} className="mt-6 space-y-6">
+                        <form onSubmit={handleSubmit} className="mt-6 space-y-6 ">
                             <input
                                 type="text" name="name" placeholder="Your Name" required
                                 value={form.name} onChange={handleChange}
-                                className="w-full p-4 border rounded-lg shadow-sm focus:ring focus:ring-gray-300"
+                                className="w-full p-4 dark:bg-gray-800 border rounded-lg shadow-sm focus:ring focus:ring-gray-300"
                             />
                             <input
                                 type="email" name="email" placeholder="Your Email" required
                                 value={form.email} onChange={handleChange}
-                                className="w-full p-4 border rounded-lg shadow-sm focus:ring focus:ring-gray-300"
+                                className="w-full p-4 dark:bg-gray-800 border rounded-lg shadow-sm focus:ring focus:ring-gray-300"
                             />
                             <textarea
                                 name="message" placeholder="Your Message" required
                                 value={form.message} onChange={handleChange}
-                                className="w-full p-4 border rounded-lg shadow-sm focus:ring focus:ring-gray-300 h-40"
+                                className="w-full p-4 dark:bg-gray-800 border rounded-lg shadow-sm focus:ring focus:ring-gray-300 h-40"
                             ></textarea>
                             <motion.button
                                 whileHover={{ scale: 1.05 }}
                                 whileTap={{ scale: 0.95 }}
-                                className="w-full bg-gray-800 text-white p-4 rounded-lg shadow-md hover:bg-white hover:border-2 hover:border-gray-800 hover:text-gray-800 hover:font-semibold"
-                            >
+                                className="block text-center w-full bg-gray-800 dark:bg-gray-100 py-4 rounded-full text-white dark:text-gray-900 cursor-pointer transition-all duration-300 hover:bg-white dark:hover:bg-gray-800 hover:border-2 hover:border-gray-800 dark:hover:text-white dark:hover:border-white hover:text-gray-800 hover:font-semibold dark:font-semibold shadow-md"
+                                >
                                 Send Message
                             </motion.button>
                         </form>
                     </motion.div>
                 </div>
-                <Space color="bg-white" direction="rounded-tl-full rounded-tr-full" />
+                <motion.div
+                                  initial={{ opacity: 0, scale: 0.9 }}
+                                  animate={ { opacity: 1, scale: 1 } }
+                                  transition={{ duration: 0.8, delay: 0.6, ease: "easeOut" }}
+                                  className=" w-full "
+                              >
+                                  <hr className="mx-20 dark:border dark:border-gray-300 " />
+                              </motion.div>
+                <Space color="bg-white dark:bg-gray-900" direction="rounded-tl-full rounded-tr-full" />
+                
 
             </div>
 
