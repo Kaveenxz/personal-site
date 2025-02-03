@@ -61,7 +61,7 @@ function CallToAction() {
             >
                 {/* Email Button */}
                 <motion.div
-            className="bg-gray-800 dark:bg-white px-10 py-4 rounded-full flex gap-2 text-white dark:text-gray-800 cursor-pointer transition-all duration-300 hover:bg-white hover:border-2 hover:border-gray-800 hover:text-gray-800 dark:hover:bg-gray-800 dark:hover:text-white hover:font-semibold shadow-md"
+            className="bg-gray-800 dark:bg-white px-10 py-4 rounded-full flex gap-2 text-white dark:text-gray-800 cursor-pointer transition-all duration-300 hover:bg-white hover:border-2 hover:border-gray-900 hover:text-gray-800 dark:hover:bg-gray-900 dark:hover:text-white hover:font-semibold shadow-md"
             whileHover={{ scale: 1.05 }}
                 >
                     <button>Email</button> <Mail />

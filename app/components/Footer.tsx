@@ -19,7 +19,7 @@ function Footer() {
           <Link href="/" className="hover:text-gray-900 transition">Home</Link>
           <Link href="/services" className="hover:text-gray-900 transition">Services</Link>
           <Link href="/portfolio" className="hover:text-gray-900 transition">Portfolio</Link>
-          <Link href="/portfolio" className="hover:text-gray-900 transition">About</Link>
+          <Link href="/about" className="hover:text-gray-900 transition">About</Link>
           <Link href="/contact" className="hover:text-gray-900 transition">Contact</Link>
         </div>
 

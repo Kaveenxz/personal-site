@@ -9,12 +9,12 @@ export default function Home() {
 
 
   return (
-    <div className="flex  flex-col items-center w-full dark:bg-gray-900">
+    <div className="flex  flex-col items-center w-full dark:bg-gray-800">
  
         <HomePage/>
-        <Space color="bg-gray-100" direction="rounded-bl-full rounded-br-full" backgroundImage="radial-gradient(circle, rgba(0,0,0,0.1) 1px, transparent 1px)" bgSize="10px 10px"/>
+        <Space color="bg-gray-100 dark:bg-gray-900" direction="rounded-bl-full rounded-br-full" backgroundImage="radial-gradient(circle, rgba(0,0,0,0.1) 1px, transparent 1px)" bgSize="10px 10px"/>
         <WhyChoose/>
-        <Space color="bg-gray-100" direction="rounded-tl-full rounded-tr-full" backgroundImage="radial-gradient(circle, rgba(0,0,0,0.1) 1px, transparent 1px)" bgSize="10px 10px"/>
+        <Space color="bg-gray-100 dark:bg-gray-900" direction="rounded-tl-full rounded-tr-full" backgroundImage="radial-gradient(circle, rgba(0,0,0,0.1) 1px, transparent 1px)" bgSize="10px 10px"/>
         <Service/>
         <CallToAction/>
         <Footer/>

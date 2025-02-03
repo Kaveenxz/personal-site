@@ -131,7 +131,7 @@ function Service() {
         </motion.button>
       </motion.div>
 
-      <Space color="bg-white" direction="rounded-tl-full rounded-tr-full" />
+      <Space color="bg-white dark:bg-gray-800" direction="rounded-tl-full rounded-tr-full" />
     </div>
   );
 }
