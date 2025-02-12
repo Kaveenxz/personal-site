@@ -3,23 +3,37 @@ import Footer from "@/app/components/Footer";
 import Space from "@/app/components/Space";
 import { motion } from "framer-motion";
 import { useState } from "react";
-import { Mail, Phone, MapPin, Send, Facebook, Twitter, Instagram, Linkedin } from "lucide-react";
+import { Mail, Phone, MapPin, Send, Facebook, Twitter, Instagram, Linkedin, Youtube } from "lucide-react";
+import Link from "next/link";
+import emailjs from "emailjs-com";
+import { toast } from "react-hot-toast";
 
 export default function ContactPage() {
     const [form, setForm] = useState({ name: "", email: "", message: "" });
 
-    const handleChange = (e:any) => {
+    const handleChange = (e: any) => {
         setForm({ ...form, [e.target.name]: e.target.value });
     };
 
-    const handleSubmit = (e:any) => {
+    const handleSubmit = (e: any) => {
         e.preventDefault();
-        alert("Message Sent! We'll get back to you soon.");
-        setForm({ name: "", email: "", message: "" });
+        toast.promise(
+            emailjs.sendForm(
+                "service_k9pvyvt",
+                "template_096lq7j",
+                e.target,
+                "uINV_laixGI8B35Xn"
+            ),
+            {
+                loading: "Sending message...",
+                success: "Message sent successfully!",
+                error: "Failed to send message. Please try again.",
+            }
+        )
     };
 
     return (
-        <div className="min-h-screen pt-14 bg-gray-100 text-gray-900 relative dark:bg-gray-900 dark:text-white" 
+        <div className="min-h-screen pt-14 bg-gray-100 text-gray-900 relative dark:bg-gray-900 dark:text-white"
             style={{ backgroundImage: "radial-gradient(circle, rgba(0,0,0,0.1) 1px, transparent 1px)", backgroundSize: "10px 10px" }}>
 
             {/* Hero Section */}
@@ -30,7 +44,7 @@ export default function ContactPage() {
                 className="relative pt-20 w-full flex flex-col items-center justify-center text-center px-6 text-gray-700"
             >
                 <h1 className="text-6xl font-bold bg-gradient-to-r from-black dark:from-white to-gray-400 dark:to-gray-400 text-transparent bg-clip-text drop-shadow-lg">
-                Get In Touch
+                    Get In Touch
                 </h1>
                 <p className="mt-4 text-xl opacity-80 max-w-2xl dark:text-gray-200">
                     We’d love to hear from you! Fill out the form below and we’ll get back to you as soon as possible.
@@ -55,11 +69,11 @@ export default function ContactPage() {
                         <div className="space-y-4 ">
                             <div className="flex items-center space-x-4">
                                 <Mail className="text-gray-700 dark:text-gray-100" />
-                                <span className="text-lg font-medium">contact@netizen.com</span>
+                                <span className="text-lg font-medium">netizenxz@gmail.com</span>
                             </div>
                             <div className="flex items-center space-x-4">
                                 <Phone className="text-gray-700 dark:text-gray-100" />
-                                <span className="text-lg font-medium">+94 76 123 4567</span>
+                                <span className="text-lg font-medium">+94 78 387 2364</span>
                             </div>
                             <div className="flex items-center space-x-4">
                                 <MapPin className="text-gray-700 dark:text-gray-100" />
@@ -71,29 +85,30 @@ export default function ContactPage() {
                         <div className="mt-6">
                             <h3 className="text-xl font-semibold mb-2">Follow Us</h3>
                             <div className="flex space-x-6">
-                                <a href="#" className="flex items-center space-x-2 text-gray-600 dark:text-gray-200 hover:text-blue-600 dark:hover:text-blue-500">
-                                    <Facebook size={24} />
-                                    <span>Facebook</span>
-                                </a>
-                                <a href="#" className="flex items-center space-x-2 text-gray-600 dark:text-gray-200 hover:text-blue-400 dark:hover:text-blue-300">
-                                    <Twitter size={24} />
-                                    <span>Twitter</span>
-                                </a>
+                                <Link href={""} className="flex items-center space-x-2 text-gray-600 dark:text-gray-200 hover:text-blue-600 dark:hover:text-blue-500">
+                                    <Linkedin size={24} />
+                                    <span>Linkdin....</span>
+                                </Link>
+                                <Link href={""} className="flex items-center space-x-2 text-gray-600 dark:text-gray-200 hover:text-red-500 dark:hover:text-red-500">
+                                    <Youtube size={24} />
+                                    <span>Youtube</span>
+                                </Link>
                             </div>
                             <div className="flex space-x-6 mt-2">
-                                <a href="#" className="flex items-center space-x-2 text-gray-600 dark:text-gray-200 hover:text-pink-600 dark:hover:text-pink-500">
+                                <Link href={""} className="flex items-center space-x-2 text-gray-600 dark:text-gray-200 hover:text-pink-600 dark:hover:text-pink-500">
                                     <Instagram size={24} />
                                     <span>Instagram</span>
-                                </a>
-                                <a href="#" className="flex items-center space-x-2 text-gray-600 dark:text-gray-200 hover:text-blue-800 dark:hover:text-blue-700">
+                                </Link>
+                                <Link href={""} className="flex items-center space-x-2 text-gray-600 dark:text-gray-200 hover:text-blue-800 dark:hover:text-blue-700">
                                     <Linkedin size={24} />
                                     <span>LinkedIn</span>
-                                </a>
+                                </Link>
                             </div>
                         </div>
 
                         <motion.a
-                            href="https://wa.me/94761234567?text=Hello!%20I%20have%20a%20question"
+                            href="https://wa.me/94783872364?text=Hello!%20I%20have%20a%20question"
+                            target="_blank"
                             whileHover={{ scale: 1.05 }}
                             whileTap={{ scale: 0.95 }}
                             className="block text-center w-full bg-gray-800 dark:bg-gray-100 py-4 rounded-full text-white dark:text-gray-900 cursor-pointer transition-all duration-300 hover:bg-white dark:hover:bg-gray-800 hover:border-2 hover:border-gray-800 dark:hover:text-white dark:hover:border-white hover:text-gray-800 hover:font-semibold dark:font-semibold shadow-md"
@@ -112,7 +127,9 @@ export default function ContactPage() {
                         className="bg-white dark:bg-gray-800 p-8 rounded-xl shadow-lg"
                     >
                         <h2 className="text-3xl font-semibold text-center">Send Us a Message</h2>
-                        <form onSubmit={handleSubmit} className="mt-6 space-y-6 ">
+                        <form onSubmit={handleSubmit} className="mt-6 space-y-6 "
+
+                        >
                             <input
                                 type="text" name="name" placeholder="Your Name" required
                                 value={form.name} onChange={handleChange}
@@ -128,26 +145,31 @@ export default function ContactPage() {
                                 value={form.message} onChange={handleChange}
                                 className="w-full p-4 dark:bg-gray-800 border rounded-lg shadow-sm focus:ring focus:ring-gray-300 h-40"
                             ></textarea>
+
+                            <input type="hidden" name="_captcha" value="false" />
+                            <input type="hidden" name="_subject" value="New Contact Form Submission!" />
+                            <input type="hidden" name="_autoresponse" value="Thank you for reaching out! We will get back to you soon." />
+
                             <motion.button
                                 whileHover={{ scale: 1.05 }}
                                 whileTap={{ scale: 0.95 }}
                                 className="block text-center w-full bg-gray-800 dark:bg-gray-100 py-4 rounded-full text-white dark:text-gray-900 cursor-pointer transition-all duration-300 hover:bg-white dark:hover:bg-gray-800 hover:border-2 hover:border-gray-800 dark:hover:text-white dark:hover:border-white hover:text-gray-800 hover:font-semibold dark:font-semibold shadow-md"
-                                >
+                            >
                                 Send Message
                             </motion.button>
                         </form>
                     </motion.div>
                 </div>
                 <motion.div
-                                  initial={{ opacity: 0, scale: 0.9 }}
-                                  animate={ { opacity: 1, scale: 1 } }
-                                  transition={{ duration: 0.8, delay: 0.6, ease: "easeOut" }}
-                                  className=" w-full "
-                              >
-                                  <hr className="mx-20 dark:border dark:border-gray-300 " />
-                              </motion.div>
+                    initial={{ opacity: 0, scale: 0.9 }}
+                    animate={{ opacity: 1, scale: 1 }}
+                    transition={{ duration: 0.8, delay: 0.6, ease: "easeOut" }}
+                    className=" w-full "
+                >
+                    <hr className="mx-20 dark:border dark:border-gray-300 " />
+                </motion.div>
                 <Space color="bg-white dark:bg-gray-900" direction="rounded-tl-full rounded-tr-full" />
-                
+
 
             </div>
 
