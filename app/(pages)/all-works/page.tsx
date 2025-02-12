@@ -5,6 +5,7 @@ import Image from "next/image";
 import { motion } from "framer-motion";
 import { projects } from "@/app/data/projects";
 import Space from "@/app/components/Space";
+import Footer from "@/app/components/Footer";
 
 const categories = ["All", "Web Design", "UI/UX", "Branding", "E-commerce"];
 
@@ -128,6 +129,9 @@ export default function AllWorks() {
           </motion.div>
         ))}
       </motion.div>
+      <Space color="bg-white dark:bg-gray-900" direction="rounded-tl-full rounded-tr-full"/>
+
+      <Footer/>
     </div>
   );
 }
