@@ -47,7 +47,7 @@ export default function ServicesPage() {
           Cutting-edge web development, UI/UX, and digital strategies to help you dominate online.
         </motion.p>
         <motion.a
-          href="/contact"
+          href="./contact"
         //   className="mt-6 inline-block bg-yellow-500 hover:bg-yellow-600 text-gray-900 px-6 py-3 rounded-md font-bold text-lg transition"
           className="mt-10 bg-gray-800 inline-block dark:bg-gray-100 px-10 py-4 rounded-full gap-2 text-white dark:text-gray-900 cursor-pointer transition-all duration-300 hover:bg-white dark:hover:bg-gray-800 hover:border-2 hover:border-gray-800 dark:hover:text-white dark:hover:border-white hover:text-gray-800 hover:font-semibold dark:font-semibold shadow-md"
 
@@ -121,7 +121,7 @@ export default function ServicesPage() {
           Let’s build something amazing together.
         </motion.p>
         <motion.a
-          href="/contact"
+          href="./contact"
           className="mt-5 bg-gray-800 inline-block dark:bg-gray-100 px-8 py-4 rounded-full text-white dark:text-gray-900 cursor-pointer transition-all duration-300 hover:bg-white dark:hover:bg-gray-800 hover:border-2 hover:border-gray-800 dark:hover:text-white dark:hover:border-white hover:text-gray-800 hover:font-semibold dark:font-semibold shadow-md"
           whileHover={{ scale: 1.1 }}
         >
