@@ -134,7 +134,12 @@ export default function AboutPage() {
     );
 }
 
-function Card({ title, description }:any) {
+interface CardProps {
+    title: string;
+    description: string;
+}
+
+function Card({ title, description }: CardProps) {
     return (
         <motion.div
             initial={{ opacity: 0, y: 20 }}

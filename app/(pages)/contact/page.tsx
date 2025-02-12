@@ -11,17 +11,17 @@ import { toast } from "react-hot-toast";
 export default function ContactPage() {
     const [form, setForm] = useState({ name: "", email: "", message: "" });
 
-    const handleChange = (e:any) => {
+    const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
         setForm({ ...form, [e.target.name]: e.target.value });
     };
-
-    const handleSubmit = (e:any) => {
+    
+    const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
         e.preventDefault();
         toast.promise(
             emailjs.sendForm(
                 "service_k9pvyvt",
                 "template_096lq7j",
-                e.target,
+                e.target as HTMLFormElement, // Type assertion here
                 "uINV_laixGI8B35Xn"
             ),
             {
@@ -29,8 +29,9 @@ export default function ContactPage() {
                 success: "Message sent successfully!",
                 error: "Failed to send message. Please try again.",
             }
-        )
+        );
     };
+    
 
     return (
         <div className="min-h-screen pt-14 bg-gray-100 text-gray-900 relative dark:bg-gray-900 dark:text-white"

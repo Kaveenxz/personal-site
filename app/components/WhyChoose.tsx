@@ -14,7 +14,7 @@ const features = [
 
 export default function WhyChoose() {
   const [hoveredText, setHoveredText] = useState("");
-
+    console.log(hoveredText)
   return (
     <motion.div
       initial={{ opacity: 0, y: 30 }}
@@ -28,7 +28,7 @@ export default function WhyChoose() {
           We don&apos;t just build websites we create high-performing digital experiences that attract, engage, and convert.
         </h1>
         <h1 className="text-2xl max-sm:text-lg font-bold bg-gradient-to-r from-black dark:from-white via-gray-500 dark:via-gray-400 to-black dark:to-white text-transparent bg-clip-text animate-gradient">
-          Whether you're a startup, eCommerce brand, or service business,
+          Whether you&apos;re a startup, eCommerce brand, or service business,
         </h1>
         <h1 className="text-2xl max-sm:text-lg font-bold bg-gradient-to-r from-black dark:from-white via-gray-500 dark:via-gray-400 to-black dark:to-white text-transparent bg-clip-text animate-gradient">
           our custom solutions will help you dominate your industry.
