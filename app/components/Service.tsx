@@ -10,6 +10,7 @@ import {
 } from "lucide-react";
 import React from "react";
 import Space from "./Space";
+import Link from "next/link";
 
 const services = [
   {
@@ -127,7 +128,7 @@ function Service() {
           whileTap={{ scale: 0.95 }}
           className="bg-gray-800 dark:bg-white dark:text-gray-800 px-10 py-4 rounded-full flex gap-2 text-white cursor-pointer transition-all duration-300 dark:hover:bg-gray-800  hover:bg-white hover:border-2 hover:border-gray-800 dark:hover:border-white hover:text-gray-800 dark:hover:text-white hover:font-semibold shadow-md"
         >
-          View Full Services
+          <Link href={"./all-services"}>View Full Services</Link>
         </motion.button>
       </motion.div>
 

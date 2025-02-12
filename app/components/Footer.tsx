@@ -1,4 +1,4 @@
-import { Mail, MessageCircle, Youtube, Twitter, Linkedin } from "lucide-react";
+import { Mail, MessageCircle, Youtube, Twitter, Linkedin, Instagram } from "lucide-react";
 import Link from "next/link";
 
 function Footer() {
@@ -16,28 +16,28 @@ function Footer() {
 
         {/* Center Section - Quick Links */}
         <div className="flex justify-center space-x-6 text-gray-600 dark:text-gray-200">
-          <Link href="/" className="hover:text-gray-900 transition">Home</Link>
-          <Link href="/services" className="hover:text-gray-900 transition">Services</Link>
-          <Link href="/portfolio" className="hover:text-gray-900 transition">Portfolio</Link>
-          <Link href="/about" className="hover:text-gray-900 transition">About</Link>
-          <Link href="/contact" className="hover:text-gray-900 transition">Contact</Link>
+          <Link href="/" className="hover:text-gray-900 dark:hover:text-gray-400 transition">Home</Link>
+          <Link href="/services" className="hover:text-gray-900 dark:hover:text-gray-400 transition">Services</Link>
+          <Link href="/portfolio" className="hover:text-gray-900 dark:hover:text-gray-400 transition">Portfolio</Link>
+          <Link href="/about" className="hover:text-gray-900 dark:hover:text-gray-400 transition">About</Link>
+          <Link href="/contact" className="hover:text-gray-900 dark:hover:text-gray-400 transition">Contact</Link>
         </div>
 
         {/* Right Section - Social Media & Contact */}
         <div className="flex justify-end space-x-4 text-gray-600 dark:text-gray-200">
-          <Link href="https://youtube.com" target="_blank" className="hover:text-gray-900 transition">
+          <Link href="https://www.youtube.com/@KaveenX" target="_blank" className="hover:text-gray-900 transition">
             <Youtube className="w-5 h-5" />
           </Link>
-          <Link href="https://twitter.com" target="_blank" className="hover:text-gray-900 transition">
-            <Twitter className="w-5 h-5" />
+          <Link href="https://www.instagram.com/kavee.xz/?next=%2F" target="_blank" className="hover:text-gray-900 transition">
+            <Instagram className="w-5 h-5" />
           </Link>
-          <Link href="https://linkedin.com" target="_blank" className="hover:text-gray-900 transition">
+          <Link href="https://www.linkedin.com/in/kaveen-hansith-a4a484283/" target="_blank" className="hover:text-gray-900 transition">
             <Linkedin className="w-5 h-5" />
           </Link>
-          <Link href="mailto:info@xpertrix.com" className="hover:text-gray-900 transition">
+          <Link href="mailto:netizenxz@gmail.com" className="hover:text-gray-900 transition">
             <Mail className="w-5 h-5" />
           </Link>
-          <Link href="https://wa.me/yourwhatsappnumber" className="hover:text-gray-900 transition">
+          <Link href="https://wa.me/94783872364" target="_blank" className="hover:text-gray-900 transition">
             <MessageCircle className="w-5 h-5" />
           </Link>
         </div>

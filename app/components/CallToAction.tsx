@@ -54,27 +54,30 @@ function CallToAction() {
 
             {/* Buttons with Cool Hover Effects */}
             <motion.div
-                initial={{ opacity: 0, y: 30 }}
-                animate={isInView ? { opacity: 1, y: 0 } : {}}
-                transition={{ duration: 0.8, delay: 0.4, ease: "easeOut" }}
-                className="mt-4 flex justify-center gap-5 text-lg"
-            >
-                {/* Email Button */}
-                <motion.div
-            className="bg-gray-800 dark:bg-white px-10 py-4 rounded-full flex gap-2 text-white dark:text-gray-800 cursor-pointer transition-all duration-300 hover:bg-white hover:border-2 hover:border-gray-900 hover:text-gray-800 dark:hover:bg-gray-900 dark:hover:text-white hover:font-semibold shadow-md"
-            whileHover={{ scale: 1.05 }}
-                >
-                    <button>Email</button> <Mail />
-                </motion.div>
+    initial={{ opacity: 0, y: 30 }}
+    animate={isInView ? { opacity: 1, y: 0 } : {}}
+    transition={{ duration: 0.8, delay: 0.4, ease: "easeOut" }}
+    className="mt-4 flex justify-center gap-5 text-lg"
+>
+    {/* Email Button */}
+    <motion.div
+        className="bg-gray-800 dark:bg-white px-10 py-4 rounded-full flex gap-2 text-white dark:text-gray-800 cursor-pointer transition-all duration-300 hover:bg-white hover:border-2 hover:border-gray-900 hover:text-gray-800 dark:hover:bg-gray-900 dark:hover:text-white hover:font-semibold shadow-md"
+        whileHover={{ scale: 1.05 }}
+        onClick={() => window.location.href = 'mailto:netizenxz@gmail.com'}
+    >
+        <button>Email</button> <Mail />
+    </motion.div>
 
-                {/* WhatsApp Button */}
-                <motion.div
-            className="border-2 border-gray-800 dark:border-white px-6 py-4 rounded-full flex gap-2 text-gray-800 dark:text-white font-semibold cursor-pointer transition-all duration-300 hover:bg-gray-800 dark:hover:bg-white hover:text-white dark:hover:text-gray-800 shadow-md"
-            whileHover={{ scale: 1.05 }}
-                >
-                    <button>WhatsApp</button> <MessageCircle />
-                </motion.div>
-            </motion.div>
+    {/* WhatsApp Button */}
+    <motion.div
+        className="border-2 border-gray-800 dark:border-white px-6 py-4 rounded-full flex gap-2 text-gray-800 dark:text-white font-semibold cursor-pointer transition-all duration-300 hover:bg-gray-800 dark:hover:bg-white hover:text-white dark:hover:text-gray-800 shadow-md"
+        whileHover={{ scale: 1.05 }}
+        onClick={() => window.open('https://wa.me/94783872364', '_blank')}
+    >
+        <button>WhatsApp</button> <MessageCircle />
+    </motion.div>
+</motion.div>
+
 
             {/* Divider */}
             <motion.div
