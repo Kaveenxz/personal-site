@@ -5,6 +5,7 @@
 import Footer from "@/app/components/Footer";
 import Space from "@/app/components/Space";
 import { motion } from "framer-motion";
+import Link from "next/link";
 
 export default function AboutPage() {
     return (
@@ -115,7 +116,7 @@ export default function AboutPage() {
                     whileTap={{ scale: 0.9 }}
                     className="mt-5 bg-gray-800 dark:bg-gray-100 px-8 py-4 rounded-full text-white dark:text-gray-900 cursor-pointer transition-all duration-300 hover:bg-white dark:hover:bg-gray-800 hover:border-2 hover:border-gray-800 dark:hover:text-white dark:hover:border-white hover:text-gray-800 hover:font-semibold dark:font-semibold shadow-md"
                 >
-                    Get a Free Consultation
+                    <Link href={"./contact"}>Get a Free Consultation</Link>
                 </motion.button>
             </motion.div>
             <Space color="bg-white dark:bg-gray-900" direction="rounded-tl-full rounded-tr-full"/>
