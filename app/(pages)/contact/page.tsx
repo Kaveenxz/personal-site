@@ -3,7 +3,7 @@ import Footer from "@/app/components/Footer";
 import Space from "@/app/components/Space";
 import { motion } from "framer-motion";
 import { useState } from "react";
-import { Mail, Phone, MapPin, Send, Facebook, Twitter, Instagram, Linkedin, Youtube } from "lucide-react";
+import { Mail, Phone, MapPin, Instagram, Linkedin, Youtube } from "lucide-react";
 import Link from "next/link";
 import emailjs from "emailjs-com";
 import { toast } from "react-hot-toast";
@@ -11,11 +11,11 @@ import { toast } from "react-hot-toast";
 export default function ContactPage() {
     const [form, setForm] = useState({ name: "", email: "", message: "" });
 
-    const handleChange = (e: any) => {
+    const handleChange = (e:any) => {
         setForm({ ...form, [e.target.name]: e.target.value });
     };
 
-    const handleSubmit = (e: any) => {
+    const handleSubmit = (e:any) => {
         e.preventDefault();
         toast.promise(
             emailjs.sendForm(

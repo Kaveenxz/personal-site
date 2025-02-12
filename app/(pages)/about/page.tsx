@@ -41,7 +41,7 @@ export default function AboutPage() {
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ delay: 0.7 }}
                     >
-                        At Netizen, we don’t just build websites—we create powerful digital presences that drive growth. Whether you're a startup, a fitness brand, or an eCommerce powerhouse, we bring your vision to life with cutting-edge design and seamless functionality.
+                        At Netizen, we don&apos;t just build websites—we create powerful digital presences that drive growth. Whether you&apos;re a startup, a fitness brand, or an eCommerce powerhouse, we bring your vision to life with cutting-edge design and seamless functionality.
                     </motion.p>
                 </div>
             </motion.div>
@@ -69,7 +69,7 @@ export default function AboutPage() {
                         whileInView={{ opacity: 1 }}
                         transition={{ delay: 0.3 }}
                     >
-                        Netizen was built on the belief that great design isn’t just about aesthetics—it’s about strategy, impact, and results. We specialize in high-performance websites that blend creativity with functionality, ensuring your brand stands out and thrives in the digital space.
+                        Netizen was built on the belief that great design isn&apos;t just about aesthetics—it&apos;s about strategy, impact, and results. We specialize in high-performance websites that blend creativity with functionality, ensuring your brand stands out and thrives in the digital space.
                     </motion.p>
                     <div className="mt-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6">
                         <Card title="UI/UX Design" description="Creating seamless, user-friendly digital experiences." />
@@ -110,7 +110,7 @@ export default function AboutPage() {
                     backgroundSize: "10px 10px"
                 }}
             >
-                <h2 className="bg-gradient-to-r text-2xl sm:text-3xl font-bold dark:from-white dark:to-gray-300 from-black to-gray-400 text-transparent bg-clip-text drop-shadow-lg">Let’s Build Something Amazing Together</h2>
+                <h2 className="bg-gradient-to-r text-2xl sm:text-3xl font-bold dark:from-white dark:to-gray-300 from-black to-gray-400 text-transparent bg-clip-text drop-shadow-lg">Let&apos;s Build Something Amazing Together</h2>
                 <p className="mt-4 text-base sm:text-lg opacity-80 dark:text-gray-200">Get in touch to discuss your next project and take your brand to new heights.</p>
                 <motion.button
                     whileHover={{ scale: 1.1 }}
@@ -134,7 +134,7 @@ export default function AboutPage() {
     );
 }
 
-function Card({ title, description }: any) {
+function Card({ title, description }:any) {
     return (
         <motion.div
             initial={{ opacity: 0, y: 20 }}

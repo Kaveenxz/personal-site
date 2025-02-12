@@ -13,6 +13,7 @@ function HomePage() {
   useEffect(() => {
     setIsMounted(true);
   }, []);
+  console.log(isMounted)
 
   return (
     <div

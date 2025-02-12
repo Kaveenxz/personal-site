@@ -67,7 +67,7 @@ export default function AllWorks() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.8, duration: 0.6 }}
         >
-          {categories.map((category, index) => (
+          {categories.map((category) => (
             <motion.button
               key={category}
               onClick={() => setSelectedCategory(category)}
@@ -98,7 +98,7 @@ export default function AllWorks() {
           },
         }}
       >
-        {filteredProjects.map((project, index) => (
+        {filteredProjects.map((project) => (
           <motion.div
             key={project.id}
             className="relative group rounded-lg overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300"

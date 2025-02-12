@@ -124,8 +124,8 @@ function ServicesPage() {
       transition={{ duration: 0.5 }}
       className='bg-gray-100 dark:bg-gray-900 p-6 rounded-lg shadow-md mb-6'
     >
-      <p className='text-lg font-medium dark:text-white'>"Our website’s speed improved by 200%! The team nailed it."</p>
-      <span className='text-gray-500 dark:text-gray-200'>– John Doe</span>
+      <p className='text-lg font-medium dark:text-white'>"Our website&apos;s speed improved by 200%! The team nailed it."</p>
+      <span className='text-gray-500 dark:text-gray-200'> John Doe</span>
     </motion.div>
     <motion.div
       initial={{ opacity: 0, x: 50 }}
@@ -134,7 +134,7 @@ function ServicesPage() {
       className='bg-gray-100 dark:bg-gray-900 p-6 rounded-lg shadow-md'
     >
       <p className='text-lg font-medium dark:text-white'>"Sales doubled after their landing page optimizations!"</p>
-      <span className='text-gray-500 dark:text-gray-200'>– Jane Smith</span>
+      <span className='text-gray-500 dark:text-gray-200'> Jane Smith</span>
     </motion.div>
   </div>
 </div>

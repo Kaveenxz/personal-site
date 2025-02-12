@@ -13,6 +13,7 @@ function CallToAction() {
     return () => clearInterval(interval);
   }, []);
 
+  console.log(blink)
   // Ref for detecting when the section is in view
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, margin: "-50px" });

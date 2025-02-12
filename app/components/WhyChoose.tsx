@@ -25,7 +25,7 @@ export default function WhyChoose() {
       {/* Gradient Title with Shine Effect */}
       <div className="flex flex-col justify-center items-center text-center gap-2 mb-20">
         <h1 className="text-2xl max-sm:text-lg font-bold bg-gradient-to-r from-black dark:from-white via-gray-500 dark:via-gray-400 to-black dark:to-white text-transparent bg-clip-text animate-gradient">
-          We don’t just build websites – we create high-performing digital experiences that attract, engage, and convert.
+          We don&apos;t just build websites we create high-performing digital experiences that attract, engage, and convert.
         </h1>
         <h1 className="text-2xl max-sm:text-lg font-bold bg-gradient-to-r from-black dark:from-white via-gray-500 dark:via-gray-400 to-black dark:to-white text-transparent bg-clip-text animate-gradient">
           Whether you're a startup, eCommerce brand, or service business,
