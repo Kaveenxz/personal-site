@@ -45,7 +45,8 @@ function Service() {
     <div
       className="bg-gray-100 w-full dark:bg-gray-900"
       style={{
-        backgroundImage: "radial-gradient(circle, rgba(0,0,0,0.1) 1px, transparent 1px)",
+        backgroundImage:
+          "radial-gradient(circle, rgba(0,0,0,0.1) 1px, transparent 1px)",
         backgroundSize: "10px 10px",
       }}
     >
@@ -55,7 +56,7 @@ function Service() {
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8 }}
         viewport={{ once: true }}
-        className="text-5xl font-bold flex flex-col text-center mt-10 my-20"
+        className="text-3xl sm:text-4xl md:text-5xl font-bold flex flex-col text-center mt-10 mb-12 md:my-20"
       >
         <h1 className="font-bold bg-gradient-to-r dark:from-white from-black to-gray-400 dark:to-gray-300 text-transparent bg-clip-text drop-shadow-lg">
           Custom Solutions
@@ -71,20 +72,20 @@ function Service() {
         whileInView={{ opacity: 1, scale: 1 }}
         transition={{ duration: 0.5 }}
         viewport={{ once: true }}
-        className="my-24 mx-20 flex flex-col items-center"
+        className="my-16 sm:my-24 mx-5 md:mx-20 flex flex-col items-center"
       >
         <div className="relative w-full">
           <hr className="border border-gray-300" />
           <div className="absolute inset-0 flex items-center justify-center">
-            <h1 className="bg-white px-6 text-sm text-gray-600 rounded-xl py-2 font-semibold transform rotate-12 scale-110">
+            <h1 className="bg-white px-4 sm:px-6 text-xs sm:text-sm text-gray-600 rounded-xl py-1 sm:py-2 font-semibold transform rotate-12 scale-110">
               Services
             </h1>
           </div>
         </div>
       </motion.div>
 
-      {/* Service Items */}
-      <motion.div
+        {/* Service Items */}
+        <motion.div
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true }}
@@ -95,7 +96,7 @@ function Service() {
             transition: { staggerChildren: 0.2 },
           },
         }}
-        className="flex justify-between gap-2 mx-10 mb-20 items-center dark:text-white"
+        className="grid max-sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-5 justify-between gap-2 mx-10 mb-20 items-center dark:text-white"
       >
         {services.map((service, index) => (
           <motion.div
@@ -121,12 +122,12 @@ function Service() {
         whileInView={{ opacity: 1, scale: 1 }}
         transition={{ duration: 0.5, ease: "easeOut" }}
         viewport={{ once: true }}
-        className="mt-10 my-20 flex justify-center gap-5 text-lg"
+        className="mt-10 mb-16 sm:my-20 flex justify-center gap-5 text-base sm:text-lg"
       >
         <motion.button
           whileHover={{ scale: 1.05 }}
           whileTap={{ scale: 0.95 }}
-          className="bg-gray-800 dark:bg-white dark:text-gray-800 px-10 py-4 rounded-full flex gap-2 text-white cursor-pointer transition-all duration-300 dark:hover:bg-gray-800  hover:bg-white hover:border-2 hover:border-gray-800 dark:hover:border-white hover:text-gray-800 dark:hover:text-white hover:font-semibold shadow-md"
+          className="bg-gray-800 dark:bg-white dark:text-gray-800 px-8 sm:px-10 py-3 sm:py-4 rounded-full flex gap-2 text-white cursor-pointer transition-all duration-300 dark:hover:bg-gray-800 hover:bg-white hover:border-2 hover:border-gray-800 dark:hover:border-white hover:text-gray-800 dark:hover:text-white hover:font-semibold shadow-md"
         >
           <Link href={"./all-services"}>View Full Services</Link>
         </motion.button>

@@ -36,7 +36,7 @@ export default function AllWorks() {
         }}
       >
         <motion.h1
-          className="text-6xl pt-14 font-semibold bg-gradient-to-r text-transparent from-black dark:from-white to-gray-400 dark:to-gray-300 bg-clip-text animate-gradient"
+          className="text-4xl sm:text-5xl lg:text-6xl pt-14 font-semibold bg-gradient-to-r text-transparent from-black dark:from-white to-gray-400 dark:to-gray-300 bg-clip-text animate-gradient"
           initial={{ opacity: 0, y: -30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1 }}
@@ -44,7 +44,7 @@ export default function AllWorks() {
           Our Work
         </motion.h1>
         <motion.p
-          className="text-xl mt-4 text-gray-600 dark:text-gray-200"
+          className="text-lg sm:text-xl mt-4 text-gray-600 dark:text-gray-200"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.5, duration: 1 }}
@@ -62,7 +62,7 @@ export default function AllWorks() {
           bgSize="10px 10px"
         />
         <motion.div
-          className="flex justify-center gap-3 py-6"
+          className="flex justify-center gap-3 py-6 flex-wrap"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.8, duration: 0.6 }}
@@ -71,7 +71,7 @@ export default function AllWorks() {
             <motion.button
               key={category}
               onClick={() => setSelectedCategory(category)}
-              className={`px-6 py-2 rounded-full font-medium transition-all duration-300 ${
+              className={`px-6 py-2 rounded-full font-medium transition-all duration-300 mb-2 ${
                 selectedCategory === category
                   ? "bg-gray-700 dark:bg-gray-900 text-white scale-110 shadow-md"
                   : "bg-gray-200 dark:bg-gray-700 hover:bg-gray-300 dark:hover:bg-gray-600"
@@ -87,7 +87,7 @@ export default function AllWorks() {
 
       {/* Project Grid */}
       <motion.div
-        className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 px-6 pb-20"
+        className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-6 px-6 pb-20"
         initial="hidden"
         animate="visible"
         variants={{
@@ -129,9 +129,9 @@ export default function AllWorks() {
           </motion.div>
         ))}
       </motion.div>
-      <Space color="bg-white dark:bg-gray-900" direction="rounded-tl-full rounded-tr-full"/>
+      <Space color="bg-white dark:bg-gray-900" direction="rounded-tl-full rounded-tr-full" />
 
-      <Footer/>
+      <Footer />
     </div>
   );
 }

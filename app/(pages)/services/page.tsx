@@ -20,7 +20,7 @@ function ServicesPage() {
       transition={{ duration: 1 }}
       className="flex flex-col items-center w-full pb-10"
     >
-      <div className="mt-20 flex flex-col items-center gap-4 text-6xl font-bold text-transparent bg-clip-text">
+      <div className="mt-20 flex flex-col items-center max-sm:px-3 gap-4 text-6xl max-sm:text-5xl font-bold text-transparent bg-clip-text">
         <motion.div
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
@@ -45,7 +45,7 @@ function ServicesPage() {
         transition={{ duration: 0.8, delay: 0.7 }}
         className='mt-10 text-center'
       >
-        <p className='text-xl dark:text-gray-200'>From high-performance websites to conversion-optimized eCommerce stores, <br/>we craft digital experiences that drive real results.</p>
+        <p className='text-xl max-sm:px-3 dark:text-gray-200'>From high-performance websites to conversion-optimized eCommerce stores, <br/>we craft digital experiences that drive real results.</p>
       </motion.div>
 
       <motion.div
@@ -117,7 +117,7 @@ function ServicesPage() {
 
 <div className='bg-white text-center py-20 dark:bg-gray-800'>
   <h1 className='text-5xl font-semibold bg-gradient-to-r from-black dark:from-white dark:to-gray-300 to-gray-400 text-transparent bg-clip-text'>What Our Clients Say</h1>
-  <div className='mt-10 max-w-4xl mx-auto'>
+  <div className='mt-10 max-w-4xl mx-auto max-sm:px-3'>
     <motion.div
       initial={{ opacity: 0, x: -50 }}
       animate={{ opacity: 1, x: 0 }}
