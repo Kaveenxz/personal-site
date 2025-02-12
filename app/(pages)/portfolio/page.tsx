@@ -9,6 +9,7 @@ import personal from '@/app/images/personal.jpg'
 import enterprise from '@/app/images/enterprise.png'
 import saas from '@/app/images/saas.webp'
 import ceypto from '@/app/images/crypto.png'
+import Link from "next/link";
 
 export default function PortfolioPage() {
     const projects = [
@@ -50,7 +51,7 @@ export default function PortfolioPage() {
                     whileTap={{ scale: 0.9 }}
                     className="mt-5 bg-gray-800 dark:bg-gray-100 px-8 py-4 rounded-full text-white dark:text-gray-900 cursor-pointer transition-all duration-300 hover:bg-white dark:hover:bg-gray-800 hover:border-2 hover:border-gray-800 dark:hover:text-white dark:hover:border-white hover:text-gray-800 hover:font-semibold dark:font-semibold shadow-md"
                     >
-                    View Our Work
+                    <Link href={"./all-works"}>View Our Work</Link>
                 </motion.button>
             </motion.div>
 
@@ -107,7 +108,7 @@ export default function PortfolioPage() {
                     whileTap={{ scale: 0.9 }}
                     className="mt-5 bg-gray-800 dark:bg-gray-100 px-8 py-4 rounded-full text-white dark:text-gray-900 cursor-pointer transition-all duration-300 hover:bg-white dark:hover:bg-gray-800 hover:border-2 hover:border-gray-800 dark:hover:text-white dark:hover:border-white hover:text-gray-800 hover:font-semibold dark:font-semibold shadow-md"
                     >
-                    Start Your Project
+                   <Link href={"./contact"}>Start Your Project</Link>
                 </motion.button>
             </div>
 
