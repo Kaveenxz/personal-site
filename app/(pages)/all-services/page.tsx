@@ -134,7 +134,6 @@ export default function ServicesPage() {
   );
 }
 
-// Services Data
 const services = [
   {
     title: "Web Development",
