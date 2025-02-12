@@ -4,6 +4,7 @@ import { PhoneCall, Rocket, MonitorSmartphone, ShieldCheck, ShoppingCart, PaintB
 import Space from '@/app/components/Space';
 import React from 'react';
 import Footer from '@/app/components/Footer';
+import Link from 'next/link';
 
 function ServicesPage() {
   return (
@@ -51,6 +52,7 @@ function ServicesPage() {
         whileHover={{ scale: 1.1 }}
         whileTap={{ scale: 0.9 }}
         className="mt-10 bg-gray-800 dark:bg-gray-100 px-10 py-4 rounded-full flex gap-2 text-white dark:text-gray-900 cursor-pointer transition-all duration-300 hover:bg-white dark:hover:bg-gray-800 hover:border-2 hover:border-gray-800 dark:hover:text-white dark:hover:border-white hover:text-gray-800 hover:font-semibold dark:font-semibold shadow-md"
+        onClick={() => window.open('https://wa.me/94783872364', '_blank')}
       >
         <button>Book a Free Consultation</button> <PhoneCall />
       </motion.div>
@@ -151,7 +153,7 @@ function ServicesPage() {
           className="mt-5 bg-gray-800 dark:bg-gray-100 px-8 py-4 rounded-full text-white dark:text-gray-900 cursor-pointer transition-all duration-300 hover:bg-white dark:hover:bg-gray-800 hover:border-2 hover:border-gray-800 dark:hover:text-white dark:hover:border-white hover:text-gray-800 hover:font-semibold dark:font-semibold shadow-md"
 
         >
-          Get Started Today
+          <Link href={"./contact"}>Get Started Today</Link>
         </motion.button>
       </div>
       <Space color="bg-white dark:bg-gray-900" direction="rounded-tl-full rounded-tr-full" />
